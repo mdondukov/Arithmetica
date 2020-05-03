@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingStart="@dimen/padding_sm"
+    android:paddingEnd="@dimen/padding_sm"
+    tools:context=".GameFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/margin_sm"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin_sm"
+            android:gravity="center_vertical">
+
+            <LinearLayout
+                android:layout_width="@dimen/btn_round"
+                android:layout_height="@dimen/btn_round"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="@dimen/margin_xxs"
+                android:background="@drawable/circle_bg"
+                android:elevation="@dimen/margin_xxs"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_close_white"
+                    tools:ignore="ContentDescription" />
+
+            </LinearLayout>
+
+            <ProgressBar
+                android:id="@+id/progress_bar"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="@dimen/progress_width"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                android:indeterminate="false"
+                android:max="10"
+                android:progress="6" />
+
+            <TextView
+                android:id="@+id/current_level_text_view"
+                style="@style/Widget.ArithmeticTrainer.TextView.Small"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center|end"
+                android:layout_marginEnd="@dimen/margin_xxs"
+                android:text="6/10" />
+
+        </RelativeLayout>
+
+        <TextView
+            style="@style/Widget.ArithmeticTrainer.TextView.Small"
+            android:layout_marginBottom="@dimen/margin_md"
+            android:text="@string/task_desc" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/score_margin"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/Widget.ArithmeticTrainer.TextView.Medium"
+                    android:text="2"
+                    android:textColor="?attr/colorAccent" />
+
+                <TextView
+                    style="@style/Widget.ArithmeticTrainer.TextView.Small"
+                    android:text="@string/correct"
+                    android:textColor="?attr/colorAccent" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/score_margin"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/Widget.ArithmeticTrainer.TextView.Medium"
+                    android:text="0" />
+
+                <TextView
+                    style="@style/Widget.ArithmeticTrainer.TextView.Small"
+                    android:text="@string/incorrect" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:layout_margin="@dimen/margin_xxs"
+        app:cardBackgroundColor="?attr/colorPrimary"
+        app:cardCornerRadius="@dimen/card_corners"
+        app:contentPaddingBottom="@dimen/padding_md"
+        app:contentPaddingLeft="@dimen/padding_sm"
+        app:contentPaddingRight="@dimen/padding_sm"
+        app:contentPaddingTop="@dimen/padding_md">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/Widget.ArithmeticTrainer.TextView.Large.Margin10"
+                android:text="16" />
+
+            <TextView
+                style="@style/Widget.ArithmeticTrainer.TextView.Large.Margin10"
+                android:text="+" />
+
+            <TextView
+                style="@style/Widget.ArithmeticTrainer.TextView.Large.Margin10"
+                android:text="40" />
+
+            <TextView
+                style="@style/Widget.ArithmeticTrainer.TextView.Large.Margin10"
+                android:text="=" />
+
+            <TextView
+                style="@style/Widget.ArithmeticTrainer.TextView.Large.Margin10"
+                android:text="\?" />
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <GridLayout
+        android:id="@+id/game_btn_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/margin_sm"
+        android:columnCount="2">
+
+        <Button
+            android:id="@+id/answer_0_btn"
+            style="@style/Widget.ArithmeticTrainer.Button.Blue.Large"
+            android:layout_columnWeight="1"
+            android:text="56" />
+
+        <Button
+            android:id="@+id/answer_1_btn"
+            style="@style/Widget.ArithmeticTrainer.Button.Blue.Large"
+            android:layout_columnWeight="1"
+            android:text="59" />
+
+        <Button
+            android:id="@+id/answer_2_btn"
+            style="@style/Widget.ArithmeticTrainer.Button.Blue.Large"
+            android:layout_columnWeight="1"
+            android:text="53" />
+
+        <Button
+            android:id="@+id/answer_3_btn"
+            style="@style/Widget.ArithmeticTrainer.Button.Blue.Large"
+            android:layout_columnWeight="1"
+            android:text="54" />
+
+    </GridLayout>
+
+</RelativeLayout>

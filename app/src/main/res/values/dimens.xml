@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="text_large">36sp</dimen>
+    <dimen name="text_medium">24sp</dimen>
+    <dimen name="padding_xl">72dp</dimen>
+    <dimen name="padding_md">24dp</dimen>
+    <dimen name="padding_sm">16dp</dimen>
+    <dimen name="margin_md">24dp</dimen>
+    <dimen name="margin_sm">16dp</dimen>
+    <dimen name="margin_xs">8dp</dimen>
+    <dimen name="margin_xxs">6dp</dimen>
+    <dimen name="margin_10">10dp</dimen>
+    <dimen name="logo_width">260dp</dimen>
+    <dimen name="btn_width">200dp</dimen>
+    <dimen name="btn_text">16sp</dimen>
+    <dimen name="btn_answer_text">20sp</dimen>
+    <dimen name="btn_padding">30dp</dimen>
+    <dimen name="btn_margin">6dp</dimen>
+    <dimen name="btn_round">44dp</dimen>
+    <dimen name="btn_corners">16dp</dimen>
+    <dimen name="progress_width">220dp</dimen>
+    <dimen name="score_margin">12dp</dimen>
+    <dimen name="card_corners">24dp</dimen>
+    <dimen name="settings_margin">2dp</dimen>
+</resources>

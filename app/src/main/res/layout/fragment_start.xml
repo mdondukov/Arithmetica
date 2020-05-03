@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".StartFragment">
+
+    <LinearLayout
+        android:id="@+id/hero_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:orientation="vertical">
+
+        <TextView
+            style="@style/Widget.ArithmeticTrainer.TextView.Large"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="@dimen/margin_sm"
+            android:fontFamily="@font/montserrat_black"
+            android:text="@string/app_title"
+            android:textAlignment="center"
+            android:textColor="?attr/colorAccent" />
+
+        <ImageView
+            android:layout_width="@dimen/logo_width"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:scaleType="center"
+            android:src="@drawable/sphere"
+            tools:ignore="ContentDescription" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/start_btn_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/margin_md"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/start_btn"
+            style="@style/Widget.ArithmeticTrainer.Button.White"
+            android:layout_width="@dimen/btn_width"
+            android:layout_height="wrap_content"
+            android:text="@string/start"
+            android:textColor="?attr/colorPrimaryDark" />
+
+    </LinearLayout>
+
+</RelativeLayout>

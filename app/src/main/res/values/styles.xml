@@ -1,0 +1,82 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="Theme.ArithmeticTrainer" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowBackground">@color/colorPrimary</item>
+        <item name="android:windowTranslucentStatus">true</item>
+        <item name="android:windowTranslucentNavigation">true</item>
+    </style>
+
+    <style name="Theme.ArithmeticTrainer.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="Widget.ArithmeticTrainer.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="Widget.ArithmeticTrainer.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="Widget.ArithmeticTrainer.Button" parent="">
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:fontFamily">@font/montserrat_bold</item>
+        <item name="android:textAllCaps">false</item>
+    </style>
+
+    <style name="Widget.ArithmeticTrainer.Button.White" parent="Widget.ArithmeticTrainer.Button">
+        <item name="android:background">@drawable/btn_white_bg</item>
+        <item name="android:textColor">?attr/colorPrimaryDark</item>
+    </style>
+
+    <style name="Widget.ArithmeticTrainer.Button.Blue" parent="Widget.ArithmeticTrainer.Button">
+        <item name="android:background">@drawable/btn_blue_bg</item>
+        <item name="android:textColor">?android:attr/textColorPrimaryInverse</item>
+    </style>
+
+    <style name="Widget.ArithmeticTrainer.Button.Blue.Large" parent="Widget.ArithmeticTrainer.Button.Blue">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_margin">@dimen/btn_margin</item>
+        <item name="android:paddingTop">@dimen/btn_padding</item>
+        <item name="android:paddingBottom">@dimen/btn_padding</item>
+        <item name="android:layout_gravity">fill</item>
+        <item name="android:textSize">@dimen/btn_answer_text</item>
+    </style>
+
+    <style name="Widget.ArithmeticTrainer.TextView" parent="">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">?android:attr/textColorPrimaryInverse</item>
+    </style>
+
+    <style name="Widget.ArithmeticTrainer.TextView.Large" parent="Widget.ArithmeticTrainer.TextView">
+        <item name="android:fontFamily">@font/montserrat_bold</item>
+        <item name="android:textSize">@dimen/text_large</item>
+    </style>
+
+    <style name="Widget.ArithmeticTrainer.TextView.Large.Margin10" parent="Widget.ArithmeticTrainer.TextView.Large">
+        <item name="android:layout_marginStart">@dimen/margin_10</item>
+        <item name="android:layout_marginEnd">@dimen/margin_10</item>
+    </style>
+
+    <style name="Widget.ArithmeticTrainer.TextView.Medium" parent="Widget.ArithmeticTrainer.TextView">
+        <item name="android:fontFamily">@font/montserrat_extra_bold</item>
+        <item name="android:textSize">@dimen/text_medium</item>
+    </style>
+
+    <style name="Widget.ArithmeticTrainer.TextView.Small" parent="Widget.ArithmeticTrainer.TextView">
+        <item name="android:fontFamily">@font/montserrat_medium</item>
+    </style>
+
+    <style name="Widget.ArithmeticTrainer.CardView.Blue" parent="">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginStart">@dimen/margin_xxs</item>
+        <item name="android:layout_marginTop">@dimen/margin_sm</item>
+        <item name="android:layout_marginEnd">@dimen/margin_xxs</item>
+    </style>
+
+</resources>

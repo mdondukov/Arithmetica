@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">Arithmetic Trainer</string>
+    <string name="app_title">Arithmetic\nTrainer</string>
+    <string name="training">Training</string>
+    <string name="game">Game</string>
+    <string name="result">Result</string>
+    <string name="task_desc">Choose the correct answer</string>
+    <string name="incorrect">incorrect</string>
+    <string name="correct">correct</string>
+    <string name="congratulations">Congratulations!</string>
+    <string name="new_score">Your New Score</string>
+    <string name="correct_answers">correct\nanswers</string>
+    <string name="total_questions">total\nquestions</string>
+    <string name="operations">Operations:</string>
+    <string name="difficulty">Difficulty:</string>
+    <string name="easy">Easy</string>
+    <string name="addition">Addition</string>
+    <string name="action_settings">Settings</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="start">Start</string>
+    <string name="start_again">Start again</string>
+</resources>
